@@ -1,0 +1,11 @@
+<button onclick="downloadFile('https://bluescreenofdeath539onroblox.github.io/redirect/polytrack','polytrack.5.html')">Click to download</button>
+<script>
+function downloadFile(url, filename) {
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
